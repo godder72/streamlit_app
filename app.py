@@ -5,7 +5,7 @@ from streamlit_option_menu import option_menu
 import time
 
 
-my_personal_api_key = "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"
+my_personal_api_key = "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"
 file = "file-xfFe9kHyuV8m1MRDNUgsdlBZ"
 # 아래 어시스턴트 아이디는 위의 파일을 기준으로 만든 것임. 따라서, 어시스탄트에 파일을 추가하는 방법을 확인해야돼. 
 
