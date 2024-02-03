@@ -3,9 +3,17 @@ from openai import OpenAI
 import streamlit as st
 from streamlit_option_menu import option_menu
 import time
+import toml
 
 
-my_personal_api_key = "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"
+with open("secrets.toml") as f:
+    secrets = toml.load(f)
+
+# OpenAI API 키 설정
+openai_api_key = secrets["openai"]["apikey"]
+
+
+
 file = "file-xfFe9kHyuV8m1MRDNUgsdlBZ"
 # 아래 어시스턴트 아이디는 위의 파일을 기준으로 만든 것임. 따라서, 어시스탄트에 파일을 추가하는 방법을 확인해야돼. 
 
@@ -16,13 +24,12 @@ thread_id = "thread_5iXWqxm8uiqNBf8MdZUMATnc"
 
 
 
-client = OpenAI(api_key = my_personal_api_key)
+client = OpenAI(api_key = openai_api_key)
 
 
 with st.sidebar:
     # st.title('Chat Bot')
     st.title('인공지능 목회연구소')
-    openai_api_key = my_personal_api_key
 
     selected = option_menu(
         menu_title = "Chat Bot", 
