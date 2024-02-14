@@ -119,9 +119,12 @@ prompt_template = """
 # system_role = "당신은 매우 훌륭한 목회 도우미입니다."
 
 ############## 보여지는 화면 ############3
+st.markdown("<h1 style='text-align: center; color: black;'>Chat Bot 인공지능 목회연구소</h1>", unsafe_allow_html=True)
+# st.markdown("<h2 style='text-align: center; color: black;'>💖 저는 인공지능 목회 도우미입니다</h2>", unsafe_allow_html=True)
+st.markdown("<h3 style='text-align: center; color: black;'>📰키워드를 입력하시면, 관련 예화를 찾아드립니다.</h3>", unsafe_allow_html=True)
 
-st.title("🤖 Chat Bot 인공지능 목회연구소")
-st.subheader("📰키워드를 입력하시면, 관련 예화를 찾아드립니다.")
+# st.title("Chat Bot 인공지능 목회연구소")
+# st.subheader("📰키워드를 입력하시면, 관련 예화를 찾아드립니다.")
 auto_complete = st.toggle("⚡ 예시로 채우기")
 
 

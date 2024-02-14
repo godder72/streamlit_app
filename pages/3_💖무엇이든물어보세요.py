@@ -9,8 +9,10 @@ file_id = st.secrets['file']
 assistant_id = st.secrets['assistant_id']
 thread_id = st.secrets['thread_id']
 
-st.title("🤖 Chat Bot 인공지능 목회연구소")
-st.subheader("💖 저는 인공지능 목회 도우미입니다")
+st.markdown("<h1 style='text-align: center; color: black;'>Chat Bot 인공지능 목회연구소</h1>", unsafe_allow_html=True)
+st.markdown("<h3 style='text-align: center; color: black;'>💖 저는 인공지능 목회 도우미입니다</h3>", unsafe_allow_html=True)
+# st.title("Chat Bot 인공지능 목회연구소")
+# st.subheader("💖 저는 인공지능 목회 도우미입니다")
 
 if "messages" not in st.session_state:
     st.session_state["messages"] = [{"role": "assistant", "content": "무엇을 도와드릴까요?"}]
