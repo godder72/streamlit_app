@@ -1,7 +1,6 @@
 from openai import OpenAI
 import streamlit as st
 import time
-import os
 
 
 file_id = st.secrets['file']
