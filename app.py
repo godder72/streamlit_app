@@ -9,8 +9,8 @@ st.set_page_config(page_title="Ministry Assistant")
 # st.markdown("✝ 무엇을 도와드릴까요?")
 
 
-st.markdown("<h1 style='text-align: center; color: black;'>Chat Bot 인공지능 목회연구소</h1>", unsafe_allow_html=True)
-st.markdown("<h2 style='text-align: center; color: black;'>저는 인공지능 목회 도우미입니다.💛</h2>", unsafe_allow_html=True)
+st.markdown("<h1 style='text-align: center;'>Chat Bot 인공지능 목회연구소</h1>", unsafe_allow_html=True)
+st.markdown("<h2 style='text-align: center;'>저는 인공지능 목회 도우미입니다.💛</h2>", unsafe_allow_html=True)
 
 st.divider()
 

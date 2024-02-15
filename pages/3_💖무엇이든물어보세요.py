@@ -9,8 +9,8 @@ thread_id = st.secrets['thread_id']
 
 client = OpenAI(api_key = st.secrets["key"])
 
-st.markdown("<h1 style='text-align: center; color: black;'>Chat Bot 인공지능 목회연구소</h1>", unsafe_allow_html=True)
-st.markdown("<h3 style='text-align: center; color: black;'>💖 저는 인공지능 목회 도우미입니다</h3>", unsafe_allow_html=True)
+st.markdown("<h1 style='text-align: center;'>Chat Bot 인공지능 목회연구소</h1>", unsafe_allow_html=True)
+st.markdown("<h3 style='text-align: center;'>💖 저는 인공지능 목회 도우미입니다</h3>", unsafe_allow_html=True)
 # st.title("Chat Bot 인공지능 목회연구소")
 # st.subheader("💖 저는 인공지능 목회 도우미입니다")
 

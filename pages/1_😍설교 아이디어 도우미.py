@@ -67,6 +67,8 @@ prompt_template = """
 
 (시 1:1) 복 있는 사람은 악인들의 꾀에 따르지 아니하며 죄인들의 길에 서지 아니하며 오만한 자들의 자리에 앉지 아니하며 (시 1:2) 오직 여호와의 율법을 즐거워하여 그 율법을 주야로 묵상하는 자라 (시 1:3) 그는 시냇가에 심은 나무가 때가 이르면 열매를 맺으며 그 잎사귀도 시들지 아니함 같으니 그의 하는 일이 다 형통하리로다
 
+
+
 2.
 설교 제목: "예수님으로 인한 진정한 행복"
 
@@ -92,9 +94,9 @@ prompt_template = """
 # system_role = "당신은 매우 훌륭한 목회 도우미입니다."
 
 ############## 보여지는 화면 ############3
-st.markdown("<h1 style='text-align: center; color: black;'>Chat Bot 인공지능 목회연구소</h1>", unsafe_allow_html=True)
+st.markdown("<h1 style='text-align: center;'>Chat Bot 인공지능 목회연구소</h1>", unsafe_allow_html=True)
 # st.markdown("<h2 style='text-align: center; color: black;'>💖 저는 인공지능 목회 도우미입니다</h2>", unsafe_allow_html=True)
-st.markdown("<h3 style='text-align: center; color: black;'>👌 설교 제목과 주제, 성경 구절을 추천해 드립니다</h3>", unsafe_allow_html=True)
+st.markdown("<h3 style='text-align: center;'>👌 설교 제목과 주제, 성경 구절을 추천해 드립니다</h3>", unsafe_allow_html=True)
 
 # # st.title("Chat Bot 인공지능 목회연구소")
 # st.subheader("💖 저는 인공지능 목회 도우미입니다")
@@ -142,5 +144,6 @@ if submit:
 
     st.write_stream(response)
         
-        # st.session_state = (response.choices[0].message.content)
-        
+
+    # st.session_state.messages.append({"role":"assistant", "content": response})
+    # st.chat_message("assistant").write(response)
