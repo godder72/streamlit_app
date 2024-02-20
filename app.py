@@ -20,7 +20,7 @@ with col1:
 with col2:
     st.page_link("pages/2_😎예화 도우미.py", label="예화 도우미", icon="😎")
 with col3:
-    st.page_link("pages/4_💬성경검색.py", label="성경검색 도우미", icon="💬")
+    st.page_link("pages/5_😅SUPPORT.py", label="SUPPORT", icon="💬")
 with col4:
     st.page_link("pages/3_💖무엇이든물어보세요.py", label="무엇이든물어보세요", icon="💖")
     
