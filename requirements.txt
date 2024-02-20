@@ -1,2 +1,9 @@
 openai
 streamlit
+tiktoken
+langchain
+langchain_community
+langchain_openai
+loguru
+sentence-transformers
+chromadb
